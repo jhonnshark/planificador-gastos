@@ -30,8 +30,9 @@ const App = () => {
   };
 
   return (
-    <div className={modal && 'fijar'}>
+    <div className={modal ? 'fijar' : null}>
       <Header
+        gastos={gastos}
         presupuesto={presupuesto}
         setPresupuesto={setPresupuesto}
         isValidPresupuesto={isValidPresupuesto}
