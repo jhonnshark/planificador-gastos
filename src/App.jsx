@@ -38,7 +38,7 @@ const App = () => {
             );
             setGastos(gastosActualizados);
             setTimeout(() => {
-                setGastoEditar({});
+                setGastoEditar({}); // Reseteando el state
             }, 500);
         } else {
             //Nuevo Gasto
